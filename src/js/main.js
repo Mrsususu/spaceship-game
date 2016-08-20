@@ -152,7 +152,6 @@ craft.prototype = {
 
 // 指挥官构造器
 function commander(){
-
 }
 
 commander.prototype = {
@@ -173,7 +172,6 @@ commander.prototype = {
 
 // 介质层Mediator构造器
 function mediator(){
-
 }
 
 mediator.prototype = {
@@ -211,8 +209,6 @@ mediator.prototype = {
 	}
 
 }
-
-
 
 // 控制台打印机构造器
 function consoleTable(){
@@ -260,13 +256,11 @@ consoleTable.prototype = {
 	}
 }
 
-
 // 命令对象构造器
 function message(id, type){
 	this.id = id;
 	this.type = type;
 }
-
 
 // *********** 全局对象构造 ***********
 // 各飞船建立

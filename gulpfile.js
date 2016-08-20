@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
-	path = require('path'),
-	gulpif = require('gulp-if'),
+    path = require('path'),
+    gulpif = require('gulp-if'),
     clean = require('gulp-clean'), 
     useref = require('gulp-useref'),
     minifyCss = require('gulp-minify-css'), 
@@ -49,11 +49,8 @@ gulp.task('build', function(cb){
 
     runSequence(
         'clean',
-
         'useref-html',
-
         'imagemin',
-
         cb
     );
 
