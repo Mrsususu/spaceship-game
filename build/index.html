@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行星与飞船</title>
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="layout">
+		<div class="planet"></div>
+		<div class="orbit1">
+		</div>
+		<div class="orbit2">
+<!-- 			<div class="carft2">
+				<div class="carftInner2">
+					<div class="energy"></div>
+					<span class="energyText">100</span>
+				</div>
+			</div> -->
+		</div>
+		<div class="orbit3">
+<!-- 			<div class="carft3">
+				<div class="carftInner3">
+					<div class="energy"></div>
+					<span class="energyText">100</span>
+				</div>
+			</div> -->
+		</div>
+		<div class="orbit4">
+<!-- 			<div class="carft4">
+				<div class="carftInner4">
+					<div class="energy"></div>
+					<span class="energyText">100</span>
+				</div>
+			</div> -->
+		</div>
+		<div class="music"></div>
+	</div>
+	<div id="control">
+		<div class="winLeft" id="operate">
+			<ul class="out">
+				<li class="innerOut hide">
+					<ul class="in">
+						<span class="name" data-num="1">1号</span>
+						<li class="innerIn btn1" data-type="start"><i class="glyphicon glyphicon-play"></i></li>
+						<li class="innerIn btn2" data-type="stop"><i class="glyphicon glyphicon-stop"></i></li>
+						<li class="innerIn btn3" data-type="destroy"><i class="glyphicon glyphicon-trash"></i></li>
+					</ul>
+				</li>
+				<li class="innerOut hide">
+					<ul class="in">
+						<span class="name" data-num="2">2号</span>
+						<li class="innerIn btn1" data-type="start"><i class="glyphicon glyphicon-play"></i></li>
+						<li class="innerIn btn2" data-type="stop"><i class="glyphicon glyphicon-stop"></i></li>
+						<li class="innerIn btn3" data-type="destroy"><i class="glyphicon glyphicon-trash"></i></li>
+					</ul>
+				</li>
+				<li class="innerOut hide">
+					<ul class="in">
+						<span class="name" data-num="3">3号</span>
+						<li class="innerIn btn1" data-type="start"><i class="glyphicon glyphicon-play"></i></li>
+						<li class="innerIn btn2" data-type="stop"><i class="glyphicon glyphicon-stop"></i></li>
+						<li class="innerIn btn3" data-type="destroy"><i class="glyphicon glyphicon-trash"></i></li>
+					</ul>
+				</li>
+				<li class="innerOut hide">
+					<ul class="in">
+						<span class="name" data-num="4">4号</span>
+						<li class="innerIn btn1" data-type="start"><i class="glyphicon glyphicon-play"></i></li>
+						<li class="innerIn btn2" data-type="stop"><i class="glyphicon glyphicon-stop"></i></li>
+						<li class="innerIn btn3" data-type="destroy"><i class="glyphicon glyphicon-trash"></i></li>
+					</ul>
+				</li>
+				<li class="innerOut addBtn">
+					<ul class="in">
+						<span>添加</span>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="winRight" id="logInfo">
+<!-- 			<p class="success">信息已发送成功</p>
+			<p>fail</p>
+			<p class="success">信息已发送成功</p>
+			<p>fail</p>
+			<p class="success">信息已发送成功</p>
+			<p>fail</p>
+			<p class="success">信息已发送成功</p>
+			<p>fail</p>
+			<p class="success">信息已发送成功</p>
+			<p>fail</p> -->
+		</div>
+	</div>
+	<script id="craftTemplate" type="text/x-handlebars-template">
+		<div class="craft{{id}}">
+			<div class="craftInner{{id}}">
+				<div class="energy"></div>
+				<span class="energyText">100</span>					
+			</div>
+		</div>
+	</script>
+
+	<script id="consoleTemplate" type="text/x-handlebars-template">
+		{{#each cmd}}
+	 		{{#compare target "==" "指挥官"}}
+				<p class="success">[{{target}}] {{id}}号飞船"{{type}}"指令已发送</p>	
+			{{/compare}}
+			{{#compare target "==" "飞船"}}
+				<p>[{{id}}号{{target}}] 本飞船"{{type}}"成功</p>
+			{{/compare}}
+			{{#compare target "==" "警告"}}
+				<p class="fail">[警告消息] 消息丢包啦！</p>
+			{{/compare}}
+		{{/each}}
+	</script>
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
+

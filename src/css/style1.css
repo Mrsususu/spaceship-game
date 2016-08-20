@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}
+ul, li{list-style: none;}
+body{background-color: #02071D;}
+#layout{width: 800px;height: 680px;margin: 0 auto;position: relative;}
+#control{width: 820px;margin: 20px auto;display: flex;}
+.planet, .orbit1, .orbit2, .orbit3, .orbit4{position: absolute;top: 0;right: 0;bottom: 0;left: 0;margin: auto;border-radius: 50%;border: 2px solid #3e4059;}
+.planet{width: 250px;height: 250px;}
+.orbit1{width: 350px;height: 350px;}
+.orbit2{width: 450px;height: 450px;}
+.orbit3{width: 550px;height: 550px;}
+.orbit4{width: 650px;height: 650px;}
+.music{position: absolute;top: 50px;right: 50px;width: 30px;height: 30px;background: url(../img/play.png) no-repeat;background-size: 30px;cursor: pointer;}
+
+.planet{background-color: #ec5d4a;}
+.craft1, .craft2, .craft3, .craft4{margin-top: -10px;transform: rotate(90deg);}
+.craft1{transform-origin: 50% 185px;}
+.craft2{transform-origin: 50% 235px;}
+.craft3{transform-origin: 50% 285px;}
+.craft4{transform-origin: 50% 335px;}
+
+.craftInner1, .craftInner2, .craftInner3, .craftInner4{width: 40px;height: 20px;border-radius: 10px;margin:0 auto;background-color: white;text-align: center;position: relative;overflow: hidden;}
+.energyText{position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;}
+.energy{width: 100%;height: 100%;background-color: pink;top: 0;left: 0;}
+.energy.lack{background-color: red;}
+
+.winLeft, .winRight{height: 200px;border: 2px dashed #3b3f58;box-sizing: border-box;}
+.winLeft{flex: 1;}
+.winRight{min-width: 200px;}

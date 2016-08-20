@@ -1,6 +1,14 @@
 # spaceship-game
 行星与飞船小游戏，项目尝试使用gulp打包
 
+# 运行方式
+下载代码后，运行下面代码即可完成打包工作。
+```sh
+$ npm install
+$ gulp build
+```
+游戏效果展示[（点击此处）](http://mrsususu.github.io/project/spacecraft/index.html)
+
 # 项目描述
   - 1、保证基本参数可外层配置，体现模块化，减少代码耦合性。
   - 2、在页面中展现游戏页面（如下图）。

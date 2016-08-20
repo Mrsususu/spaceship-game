@@ -1,0 +1,20 @@
+#operate{}
+#operate ul.out{display: flex;width: 600px;margin: 0 auto;}
+#operate ul.out li.innerOut{flex: 1;width: 120px;height: 120px;margin-top: 40px;}
+#operate ul.in{margin: 30px;width: 60px;height: 60px;box-sizing: border-box;border-radius: 50%;background-color: pink;position: relative;}
+#operate ul.in li.innerIn{position: absolute;height: 25px;width: 25px;border-radius: 50%;background-color: pink;}
+#operate ul.in li.btn1{top: -25px;left: 60px;}
+#operate ul.in li.btn2{top: 50%;transform: translateY(-50%);left: 80px;}
+#operate ul.in li.btn3{top: 60px;left: 60px;}
+#operate ul.in li.innerIn i{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+#operate ul.in span{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+#logInfo{padding: 8px;font-size: 12px;overflow: hidden;}
+#logInfo p{color: white;line-height: 1.5em;}
+#logInfo p.success{color: pink;}
+#logInfo p.fail{color: red;}
+
+.hide{display: none;}
+.addBtn, #operate ul.in li{cursor: pointer;}
+#operate ul.in li.innerIn.slt{background-color: grey;cursor: default;}
